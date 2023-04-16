@@ -1,0 +1,44 @@
+site_name: Fidenaro
+
+theme:
+  name: material
+  logo: assets/logo3d.png
+  favicon: assets/logo.png
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    #- navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  homepage: https://docs.fidenaro.com
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/fidenaro/
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/47u4BwKG
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+# Page tree
+nav:
+  - Fidenaro:
+      - About: index.md
+      - Social Trading: social-trading.md
+      - FDN Token: fdn-token.md
+      - Partner: partner.md
+  - Trader:
+      - Getting started: trader/getting-started.md
+  - Investor:
+      - Getting started: investor/getting-started.md
