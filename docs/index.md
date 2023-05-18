@@ -7,4 +7,6 @@ Fidenaro is a decentralized social trading platform built on the Radix Network.
 
 ## Mission
 
+Incoming
+
 
