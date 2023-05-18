@@ -4,16 +4,39 @@ theme:
   name: material
   logo: assets/logo3d.png
   favicon: assets/logo.png
+  font:
+    text: Roboto
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      #primary: blue grey
+      #accent: deep purple
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      #primary: black
+
+  #palette:
+  #  scheme: background
 
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.tabs
+    #- navigation.tabs
     #- navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.path
     - navigation.top
+    - toc.integrate
+    #- header.autohide
+    #- navigation.footer
 
 extra_css:
   - stylesheets/extra.css
@@ -25,6 +48,8 @@ extra:
       link: https://twitter.com/fidenaro/
     - icon: fontawesome/brands/discord
       link: https://discord.gg/47u4BwKG
+  #generator: false
+  #copyright: Fidenaro
 
 markdown_extensions:
   - admonition
@@ -33,12 +58,12 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Fidenaro:
-      - About: index.md
-      - Social Trading: social-trading.md
-      - FDN Token: fdn-token.md
-      - Partner: partner.md
+  - About: index.md
+  - Social Trading: social-trading.md
+  - FDN Token: fdn-token.md
   - Trader:
       - Getting started: trader/getting-started.md
   - Investor:
       - Getting started: investor/getting-started.md
+  - References:
+      - Partner: partner.md
