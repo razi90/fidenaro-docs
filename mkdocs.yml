@@ -31,9 +31,11 @@ theme:
     - toc.integrate
     #- header.autohide
     #- navigation.footer
+    - content.tabs.link
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/cards.css
 
 extra:
   homepage: https://docs.fidenaro.com
@@ -42,6 +44,8 @@ extra:
       link: https://twitter.com/fidenaro/
     - icon: fontawesome/brands/discord
       link: https://discord.gg/47u4BwKG
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/fidenaro
   #generator: false
   #copyright: Fidenaro
 
@@ -49,15 +53,16 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
 
-# Page tree
 nav:
-  - About: index.md
-  - Social Trading: social-trading.md
-  - FDN Token: fdn-token.md
-  - Trader:
-      - Getting started: trader/getting-started.md
-  - Investor:
-      - Getting started: investor/getting-started.md
-  - References:
-      - Partner: partner.md
+  - Introduction: index.md
+  - Getting Started (Beta): getting-started.md
+  #  - Social Trading: social-trading.md
+  - Contact: contact.md
