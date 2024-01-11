@@ -4,7 +4,7 @@ The section below illustrates how deposits and withdrawals work in a single netw
 
 When a user allocates capital to a vault, they are issued vault shares, that hold a % claim to the assets in the vault. Upon redemption, these shares hold a claim to a proportion of each asset in the vault. Users can withdraw their assets any time.
 
-    !!!
+    !!! info inline end "Capital Allocation"
 
          When a user allocates capital to a vault, they are issued vault shares, that hold a % claim to the assets in the vault. Upon redemption, these shares hold a claim to a proportion of each asset in the vault. Users can withdraw their assets any time.
 
