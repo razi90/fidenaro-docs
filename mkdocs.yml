@@ -64,5 +64,5 @@ markdown_extensions:
 nav:
   - Introduction: index.md
   - Getting Started (Beta): getting-started.md
-  #  - Social Trading: social-trading.md
+  - Deposit & Withdrawal Mechanics: mechanics.md
   - Contact: contact.md
