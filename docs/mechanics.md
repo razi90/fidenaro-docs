@@ -4,9 +4,7 @@ The section below illustrates how deposits and withdrawals work in a single netw
 
 When a user allocates capital to a vault, they are issued vault shares, that hold a % claim to the assets in the vault. Upon redemption, these shares hold a claim to a proportion of each asset in the vault. Users can withdraw their assets any time.
 
-    !!! info inline end "Capital Allocation"
-
-        When a user allocates capital to a vault, they are issued vault shares, that hold a % claim to the assets in the vault. Upon redemption, these shares hold a claim to a proportion of each asset in the vault. Users can withdraw their assets any time.
+> ℹ️ When a user allocates capital to a vault, they are issued vault shares, that hold a % claim to the assets in the vault. Upon redemption, these shares hold a claim to a proportion of each asset in the vault. Users can withdraw their assets any time.
 
 ## Deposit
 
@@ -17,11 +15,15 @@ When a user allocates funds to a vault, they are issued vault shares correspondi
 3. Your vault share % is calculated: $Share = Deposit/(Deposit+NAV)$
 4. New vault shares are issued to the depositor s.t.:
 
-$$Share = \frac{NewlyIssued}{(NewlyIssued + Outstanding)}$$
+$$
+Share = \frac{NewlyIssued}{(NewlyIssued + Outstanding)}
+$$
 
 so that the amount of newly issued shares:
 
-$$NewlyIssued = Share * \frac{Outstanding}{(1-Share)}$$
+$$
+NewlyIssued = Share * \frac{Outstanding}{(1-Share)}
+$$
 
 ## Withdrawal
 
