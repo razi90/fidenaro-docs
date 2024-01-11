@@ -17,11 +17,11 @@ When a user allocates funds to a vault, they are issued vault shares correspondi
 3. Your vault share % is calculated: $Share = Deposit/(Deposit+NAV)$
 4. New vault shares are issued to the depositor s.t.:
 
-$$Share = NewlyIssued / (NewlyIssued + Outstanding)$$
+$$Share = \frac{NewlyIssued}{(NewlyIssued + Outstanding)}$$
 
 so that the amount of newly issued shares:
 
-$$NewlyIssued = Share * Outstanding/(1-Share)$$
+$$NewlyIssued = Share * \frac{Outstanding}{(1-Share)}$$
 
 ## Withdrawal
 
