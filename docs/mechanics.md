@@ -10,7 +10,7 @@ When a user allocates funds to a vault, they are issued vault shares correspondi
 
 1. User initiates a deposit. This is expressed in USDC
 2. The vault calculates the Net Asset Value: $NAV = SUM(asset_i * price_i)$
-3. Your vault share % is calculated: $Share = Deposit/(Deposit+NAV)$
+3. Your vault share % is calculated: $Share = \frac{Deposit}{(Deposit+NAV)}$
 4. New vault shares are issued to the depositor s.t.:
 
 $$
@@ -27,7 +27,7 @@ $$
 
 When a user wishes to withdraw their funds from a vault, the following sequence of calculations takes place:
 
-1. Withdrawal % is calculated: WithdrawalPercent = MyShares/Outstanding
+1. Withdrawal % is calculated: $WithdrawalPercent = \frac{MyShares}{Outstanding}$
 2. The WithdrawalPercent is applied to each asset position in the vault, and the user is sent a proportion of each position in the vault
 3. WIth a future update: The user is able to select between receiving the various vault assets or converting them into USDC. If the user selects USDC, their claimed assets are routed through the market and liquidated
 4. When the withdrawal is processed, shares are burnt
