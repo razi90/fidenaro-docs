@@ -17,7 +17,7 @@ $$
 NAV = \sum _ { i = 1} ^ { m } asset_i * price_i
 $$
 
-3. Your vault share ratio is calculated:
+3. User vault share ratio is calculated:
 $$
 DepositRatio = \frac{Deposit}{NAV}
 $$
@@ -62,8 +62,10 @@ $$ -->
 
 When a user wishes to withdraw their funds from a vault, the following sequence of calculations takes place:
 
-1. WithdrawalRatio is calculated as the ratio of your shares ('MyShares') to the total shares in the vault ('TotalShares'):
-$$WithdrawalRatio = \frac{MyShares}{TotalShares}$$
+1. WithdrawalRatio is calculated as the ratio of user shares to the total shares in the vault:
+$$
+WithdrawalRatio = \frac{UserShares}{TotalShares}
+$$
 
 2. The WithdrawalRatio is applied to each asset position in the vault, and the user is sent a proportion of each position in the vault. This means you receive an amount of each asset equivalent to your share percentage in the vault.
 
