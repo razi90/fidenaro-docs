@@ -26,9 +26,3 @@ Fidenaro is currently in its development phase, with a recent milestone being th
 ## Looking Ahead
 
 Our roadmap includes careful evaluation and incorporation of user feedback, continuous development of the platform, and preparation for a mainnet launch in the coming months. While our current focus is on basic functionalities like simple swaps, future updates will introduce more sophisticated features like limit orders. A key aspect of our ongoing development is enhancing the user interface and overall experience, ensuring Fidenaro is not only powerful but also intuitive and user-friendly.
-
-## Team
-
-=== "Founders"
-
-    ![Image title](/assets/team/team_all.png){ align=left }
